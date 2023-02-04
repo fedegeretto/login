@@ -71,9 +71,31 @@ form label input::placeholder{
     margin: 1rem;
 }
 
+/* #error{
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    color: #be0000;
+} */
+
+.error{
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    color: #be0000;
+}
+
+.copy{
+    margin-top: 1rem;
+    color: #06002093;
+    line-height: 1.4;
+}
+
+.bienvenidos{
+    text-align: center;
+}
+
 @media (min-width: 700px){
     form{
-        width: 50%;
+        width: 40%;
     }
 
     form button{

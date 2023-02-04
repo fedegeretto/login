@@ -18,8 +18,13 @@ iniciarSesion.addEventListener('click', function(event){
     if (usuario == "demo" && contraseña == "demo1234") {
         window.location.replace("bienvenidos.html");
     } else {
-        alert("Usuario o contraseña incorrectos");
+        // Obtenemos del DOM el párrafo y le agregamos texto
+        error = document.getElementById("error");
+        error.textContent = "Por favor, ingresa los datos correctos.";
+        error.classList.add("error")
+        setTimeout(function ocultarError(){
+            error.textContent = "";
+            error.classList.remove("error")
+        }, 3000)
     }
 })
-
-
